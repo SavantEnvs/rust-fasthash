@@ -1,0 +1,10 @@
+# Backport of mayhemheroes/rust-fasthash run 3 (target fasthash-fuzz) at UPSTREAM commit
+# ef0c52b4157af9a1a7d19b2a37658b6c26a6bea6. libFuzzer binary built by mayhem/build.sh from
+# the additive mayhem/fuzz/ cargo-fuzz crate.
+# origin: https://app.mayhem.security/mayhemheroes/rust-fasthash/fasthash-fuzz/3
+project: savantenvs/rust-fasthash
+target: fasthash-fuzz-buggy-mhh-run-3
+
+cmds:
+  - cmd: /mayhem/fasthash-fuzz
+    libfuzzer: true
